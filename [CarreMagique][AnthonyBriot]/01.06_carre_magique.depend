@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1484323035 source:d:\projets_codeblocks\01.06_carre_magique\main.c
+	<stdio.h>
+	<stdlib.h>
+
