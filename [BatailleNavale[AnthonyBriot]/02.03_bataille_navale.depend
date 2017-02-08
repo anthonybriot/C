@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1486136418 source:d:\projets_codeblocks\02.03_bataille_navale\main.c
+	<stdio.h>
+	<stdlib.h>
+
