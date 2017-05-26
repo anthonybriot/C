@@ -263,7 +263,7 @@ void BallMouv (game *myGame, coordonnees *dep, coordonnees *dep2, coordonnees *b
 
                     boule.x=j*cos(i);
                     boule.y=j*sin(i);
-                    SDL_SetRenderDrawColor(myGame->g_pRenderer,0,84,114,174);
+                    SDL_SetRenderDrawColor(myGame->g_pRenderer,255,255,255,255);
                     SDL_RenderDrawPoint(myGame->g_pRenderer,boule.x+balle->x,boule.y+balle->y);
                                 }
                             }
