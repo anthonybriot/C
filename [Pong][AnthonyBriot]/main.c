@@ -91,7 +91,7 @@ int main(int argc, char *argv[])
 
 
                 if(choix==0){
-                    printf("5 PONG\n");
+                    printf("Entrer 1 puis appuyer sur entrer :\n");
 
                     scanf("%i",&choix);
 
@@ -100,7 +100,7 @@ int main(int argc, char *argv[])
                 switch (choix){
 
 
-                        case 5:init("Chapter 1 setting up SDL",SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,SCREEN_WIDTH,SCREEN_HEIGHT,SDL_WINDOW_SHOWN,&myGame);
+                        case 1:init("Chapter 1 setting up SDL",SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,SCREEN_WIDTH,SCREEN_HEIGHT,SDL_WINDOW_SHOWN,&myGame);
                                 while(state.g_bRunning){
 
                                     handleEvents(&state,&dep,&dep2,&s,&z,&raq1,&raq2,&balle,&MouvementBallon);
