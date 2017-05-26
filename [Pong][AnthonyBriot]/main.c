@@ -10,6 +10,7 @@
 #define SCREEN_WIDTH 800
 #define SCREEN_HEIGHT 600
 
+
 typedef struct game{
 
 
@@ -161,6 +162,7 @@ int init(char *title, int xpos,int ypos,int width, int height,int flags,game *my
 
 }
 
+//GESTION DES MOUVEMENTS
 
 void Mouvement(int raq1, int raq2, coordonnees *dep, coordonnees *dep2, coordonnees *z, coordonnees *s){
 
@@ -178,7 +180,10 @@ void Mouvement(int raq1, int raq2, coordonnees *dep, coordonnees *dep2, coordonn
 
 }
 
+
+
 //PERMET D'AVOIR LA LIGNE BLANCHE AU MILIEU DU TERRAIN
+
 void DessinRect(game *myGame){
 
            //Définition du rectangle a dessiner
@@ -288,7 +293,8 @@ void destroy(game *myGame){
 
 
 
-//GESTION DES MOUVEMENTS DES RAQUETTES (RAQ1, RAQ2)
+//AFFICHAGE RAQ1/RAQ2 -> DEPLACEMENT RAQ1/2 EN FONCTION DES TOUCHES
+
 void handleEvents(gameState *state,coordonnees *dep,coordonnees *dep2,coordonnees *z,coordonnees *s, int *raq1, int *raq2,coordonnees *balle, coordonnees *MouvementBallon){
 
     balle->x-= MouvementBallon->x;
